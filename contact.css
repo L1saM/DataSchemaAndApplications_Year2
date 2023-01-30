@@ -1,0 +1,160 @@
+/*Contact page style page*/
+
+/*Referencing all the elements in the box*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Background image inserted*/
+body {
+  background-image: url(../Images/lights2.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/*Contact us box style*/
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgba(31, 30, 30, 0.8);
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(12, 220, 247, 0.829);
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*Heading-contact us*/
+.wrapper .title h1 {
+  color: aqua;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+}
+
+/*Text boxes for input style*/
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+  width: 50%;
+}
+
+.input-fields .input,
+.msg textarea {
+  margin: 15px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid aqua;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 212px;
+}
+
+/*Send button styling*/
+.btn {
+  background: aqua;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .msg textarea {
+    height: 80px;
+  }
+
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+}
+
+/*Banner styling and background */
+.banner-area {
+
+  background-image: url(../Images/london2.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 15px 60px;
+}
+
+/*Menu styling*/
+.menu {
+  width: 42%;
+  float: right;
+  list-style: none;
+}
+
+/*Nar bar style*/
+.menu li {
+  width: 100px;
+  height: 50px;
+  line-height: 30px;
+  color: aqua;
+  font-size: 15px;
+  text-transform: uppercase;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  margin-top: 0%;
+  margin-right: 8px;
+  padding: 8px 15px;
+}
+
+/*When cursor hovers over narbar buttons*/
+.menu li:hover {
+  background: linear-gradient(aqua, gray, black);
+  transition: .8s;
+}
+
+.menu li:hover a {
+  background: gray;
+  transition: .5s;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: aqua;
+  text-transform: uppercase;
+}

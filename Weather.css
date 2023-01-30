@@ -1,0 +1,194 @@
+/*Weather stylesheet*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Adding background image*/
+body {
+    background-image: url("../Images/day.jpg");
+    background-size: cover;
+    background-position: top center;
+    font-family: Georgia;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+
+}
+
+/*Weather heading*/
+h2 {
+    color: aqua;
+    font-family: Georgia;
+    text-align: center;
+    border-style: solid;
+    border-width: 4px;
+    border-color: aqua;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+    text-shadow: 8px 10px rgba(5, 5, 5, 0.6);
+}
+
+/*Styling wrapper class*/
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.6));
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+/*Styling header*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 40px;
+}
+
+header input {
+    padding: 10px 15px;
+    max-width: 280px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255. 0.3);
+    /*Shapes search box*/
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 4px solid aqua;
+    color: gray;
+    font-size: 23px;
+    font-family: Georgia;
+    font-weight: 300;
+    transition: 0.3s ease-out;
+}
+
+/*Styling main information area*/
+main {
+    padding: 25px 25px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /*Adds shadowing to your text*/
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*Styling the name of the city*/
+.location .city {
+    font-size: 35px;
+    font-weight: 500;
+    color: aqua;
+    margin-bottom: 10px;
+    border-style: dotted;
+    border-width: 4px;
+    border-color: aqua;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-style: italic;
+    text-shadow: 3px 5px rgba(0, 0, 0, 0.6);
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/*Styling the date of the city*/
+.location .date {
+    font-size: 28px;
+    font-weight: 500;
+    color: aqua;
+    margin-bottom: 10px;
+    /*Adds shadowing to your text*/
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.6);
+    padding-top: 20px;
+    font-style: italic;
+}
+
+/*Styling the temperature of the city*/
+.current .temp {
+    font-size: 80px;
+    font-weight: 900;
+    color: aqua;
+    margin: 30px 0px;
+    /*Adds shadowing to your text*/
+    text-shadow: 3px 8px rgba(0, 0, 0, 0.6);
+    font-style: italic;
+}
+
+.current .temp span {
+    font-family: Georgia;
+    font-weight: 500;
+}
+
+/*Styling weather forecast*/
+.current .weather {
+    color: aqua;
+    margin-bottom: 13px;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    /*Adds shadowing to your text*/
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+
+}
+
+/*High-low temperature style*/
+.current .hi-low {
+    color: aqua;
+    /*Adds shadowing to your text*/
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+/*Close button style and alignment*/
+.button {
+    text-decoration: none;
+    border: 3px solid black;
+    padding: 20px 35px;
+    font-size: 18px;
+    color: aqua;
+    display: inline-block;
+    margin-top: 5%;
+    font-family: Georgia;
+    text-transform: uppercase;
+    margin: 0;
+    margin: 0;
+    position: absolute;
+    font-style: italic;
+    top: 85%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+/*If user hovers over button with cursor*/
+.button:hover {
+    border-color: black;
+    background: aqua;
+    transition: .3s;
+    color: white;
+}
+
+/*Page footer styling*/
+.footer {
+    position: center;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    left: 0;
+    bottom: 0;
+    font-family: Georgia;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(gray, black);
+    color: aqua;
+    text-align: center;
+}

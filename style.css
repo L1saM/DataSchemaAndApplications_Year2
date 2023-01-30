@@ -1,116 +1,82 @@
-body {
-    background-color: #f4f4f4;
-    color: #555;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
-    margin: 0;
-}
+/*Landing page styling*/
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
+/*Banner styling and background */
+.banner-area {
 
-#main-header {
-    background-color: aqua;
-    color: #0A0909;
-
-}
-
-#navbar {
-    background-color: #333;
-    color: #fff;
-
-}
-
-#navbar ul {
-    padding: 0;
-    list-style: none;
-}
-
-#navbar li {
-    display: inline;
-
-}
-
-#navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding-right: 15px;
-
-}
-
-a:hover {
-    background-color: aqua;
-}
-
-a:link {
-    color: blueviolet;
-}
-
-a:visited {
-    color: chartreuse;
-}
-
-a:active {
-    color: crimson;
-}
-
-#showcase {
-    background-image: url('../images/map.png');
-    background-position: center;
-    min-height: 400px;
-    margin-bottom: 30px;
-    text-align: center;
+    background-image: url(../Images/london2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: 100%
 }
 
-#showcase h1 {
-    color: #fff;
-    font-size: 50px;
-    line-height: 2.6em;
-    padding-top: 30px;
-
+body {
+    margin: 0;
+    padding: 0;
 }
 
-#main {
+header {
+    padding: 15px 60px;
+}
+
+/*Logo styling*/
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Georgia;
+    padding: 20px 0;
+    width: 20%;
     float: left;
-    width: 70%;
-    padding: 0 30px;
-    box-sizing: border-box;
 }
 
-#sidebar {
-    float: right;
-    width: 30%;
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-#main-footer {
-    background: #333;
-    color: #fff;
+/*Middle banner text*/
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aqua;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    font-family: Georgia;
 }
 
-@media(max-width.600px) {
-    #main {
-        width: 100%;
-        float: none;
-    }
+/*Banner-text*/
+.banner-text h2 {
+    font-family: Georgia;
+    margin: 0;
+    font-size: 60px;
+    color: aqua;
 
-    #sidebar {
-        width: 100%;
-        float: none;
-    }
+}
 
+/*Banner paragraph*/
+.banner-text p {
+    font-family: Georgia;
+    margin: 0;
+    font-size: 30px;
+    color: aqua;
 
+}
+
+/*Bottom buttons*/
+.banner-text a {
+    text-decoration: none;
+    border: 3px solid black;
+    padding: 10px 35px;
+    font-size: 18px;
+    color: aqua;
+    display: inline-block;
+    margin-top: 5%;
+    font-family: Georgia;
+    text-transform: uppercase;
+
+}
+
+/*When cursor hovers over bottom boxes*/
+.banner-text a:hover {
+    border-color: aqua;
+    background: black;
+    transition: .8s;
+    color: white;
 }

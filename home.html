@@ -1,0 +1,115 @@
+<!--Home page html-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Custom stylesheet-->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <!--Logo and background image-->
+    <div class="banner-area">
+        <header>
+            <a href="#" class="logo"><img src="images/Logo1.png"></img></a>
+
+            <!--Linked pages so menu is functional-->
+            <ul class="menu">
+                <li><a href='Index.html'> Home</a></li>
+                <li><a href='Torbay.html'> Torbay</a></li>
+                <li><a href='Hamelin.html'> Hamelin</a></li>
+            </ul>
+
+            <br></br>
+
+            <!--Accordian layout for questions -->
+            <h2><em>Frequently Asked Questions (FAQs)</em></h2>
+
+            <!--Breaks-->
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <!--Beginning of FAQs with drop down responses.-->
+            <button class="accordion"><em>Question 1 -What is a twin city?</em></button>
+            <div class="panel">
+                <!--Answers to questions-->
+                <p><em> In mainland Europe, the most commonly used terms are "twin towns", "partnership towns", "partner
+                        towns", and "friendship towns".
+                        The European Commission uses the term "twinned towns" and refers to the process as "town
+                        twinning".
+                        Spain uses the term "ciudades hermanadas", which means "sister cities".</em></p>
+            </div>
+
+            <button class="accordion"><em>Question 2- Are there any benefits to twinning?</em></button>
+            <div class="panel">
+                <!--Answers to questions-->
+                <p><em>Yes. A good twinning partnership can bring many benefits to a community and the municipality.
+                        By bringing people together from different parts of Europe, it gives an opportunity to share
+                        problems, exchange views and understand different viewpoints on any issue where there is a
+                        shared
+                        interest or concern.</em></p>
+            </div>
+
+            <button class="accordion"><em>Question 3- When did town/city twinning start?</em></button>
+            <div class="panel">
+                <!--Answers to questions-->
+                <p><em>The town twinning movement started very soon after 1945, with the passionate support of mayors
+                        and
+                        citizens who vowed that Europe should never again be torn apart by war.
+                        Most of the twinnings were between towns from countries that had, till recently, been divided by
+                        war. official relationship-builder, started in Europe after the second world war.
+                        The idea was simple: repair damaged relationships between France, Germany and the UK.
+                        Find towns that suffered during the wars and pair them. Then encourage people from these areas
+                        to
+                        meet, mix and get along.</em></p>
+            </div>
+
+            <button class="accordion"><em>Question 4- Are there still twinned cities/town now?</em></button>
+            <div class="panel">
+                <!--Answers to questions-->
+                <p><em> Yes. There are still many twin cities/towns today, in every continent across the world. Many
+                        towns
+                        and cities even have more than one twin.</em></p>
+            </div>
+
+
+            <button class="accordion"><em>Question 5- What is the largest twin city in the world?</em></button>
+            <div class="panel">
+                <!--Answers to questions-->
+                <p><em>Minneapolis & Saint Paul, Minnesota. The area occupied by Saint Paul, the capital of Minnesota,
+                        and
+                        the state's largest city, Minneapolis, is in fact known as the Twin Cities and is the most
+                        famous
+                        twin-city pair in the United States.</em></p>
+            </div>
+
+            <!--Javascript for drop down box functionality-->
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+</body>
+
+</html>

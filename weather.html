@@ -1,0 +1,60 @@
+<!--Weather html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather</title>
+  <!--Custom stylesheet-->
+  <link rel="stylesheet" href="Css/weather.css" />
+</head>
+
+<body>
+  <h2> Todays weather forecast:</h2>
+  <div class="wrapper">
+    <header>
+      <!--Text input and placeholder-->
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+    </header>
+    <main>
+      <section class="location">
+        <!--Set a default city-->
+        <div class="city"> A city around the world</div>
+        <!--Set a default date-->
+        <div class="date">Todays date</div>
+      </section>
+      <div class="current">
+        <!--Setting weather temperature to unit celsius-->
+        <div class="temp">Current temperature in<span>°c</span></div>
+        <div class="weather">Current weather</div>
+        <!--Setting the high and low temperature-->
+        <div class="hi-low">High temperature°c / Low temperature°c</div>
+      </div>
+    </main>
+  </div>
+
+  <!--Close window button-->
+
+  <input type="button" class="button" value="Click to close this window" onclick="self.close()">
+
+  <!--Footer-->
+  <div class="footer">
+    <p><em>Twin Cities</em></p>
+  </div>
+
+  <!--Linking my script source to my js file-->
+  <script src="weather.js"></script>
+
+  <!--Javascript for close button functionality-->
+  <script language="javascript" type="text/javascript">
+    function windowClose() {
+      window.close();
+    }
+  </script>
+
+</body>
+
+</html>

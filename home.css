@@ -1,0 +1,110 @@
+/*Home page style sheet*/
+
+/*FAQ accordian box styling*/
+/*Questions & answers*/
+.accordion {
+    background-color: rgb(172, 180, 180);
+    color: rgba(51, 50, 50, 0.753);
+    cursor: pointer;
+    padding: 19px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transform: translate(50%);
+    transition: 0.5s;
+    font-family: Georgia;
+    text-transform: uppercase;
+    color: black;
+}
+
+/*When button is active*/
+.active,
+.accordion:hover {
+    background-color: aqua;
+    text-decoration: underline;
+
+}
+
+/*FAQ title*/
+h2 {
+    font-family: Georgia;
+    color: aqua;
+    font-size: 35px;
+}
+
+/*Accordian panel*/
+.panel {
+    padding: 0 19px;
+    display: none;
+    background-color: gray;
+    overflow: hidden;
+    width: 48%;
+    transform: translate(50%);
+    font-size: 25px;
+    color: black;
+}
+
+
+/*Banner styling and background */
+.banner-area {
+
+    background-image: url(../Images/lights2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 15px 60px;
+}
+
+/*Menu styling*/
+.menu {
+    width: 42%;
+    float: right;
+    list-style: none;
+}
+
+/*Nav bar*/
+.menu li {
+    width: 100px;
+    height: 50px;
+    line-height: 30px;
+    color: aqua;
+    font-size: 15px;
+    text-transform: uppercase;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    display: inline-block;
+    margin-top: 0%;
+    margin-right: 8px;
+    padding: 8px 15px;
+}
+
+/*When cursor hovers over nav bar buttons*/
+.menu li:hover {
+    background: linear-gradient(aqua, gray, black);
+    transition: .8s;
+}
+
+.menu li:hover a {
+    background: gray;
+    transition: .5s;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aqua;
+    text-transform: uppercase;
+}
